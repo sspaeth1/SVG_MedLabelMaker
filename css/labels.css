@@ -1,0 +1,101 @@
+
+*{
+    font-family: sans-serif;
+}
+
+:root{
+    --cscBlue:#0093d0;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.label_Grid{
+    display:flex;
+    flex-flow: row wrap;
+    max-width: 80%;
+    justify-content: center;
+}
+
+.label_card{
+    min-height: 450px;
+    background-color: rgb(233, 233, 233);
+    max-width: 600px;
+    width: 450px;
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin:1%;
+    border-radius: 10px;
+}
+div.label_Grid divc.label_card > img {
+    position:relative;
+    width: 80%;
+}
+div.label_Grid div.label_card a> img:hover {
+    opacity:.5;
+    transform: scale(1.05);
+}
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 2px 2px 5px rgb(160, 160, 160);
+    width:100%;
+    padding-left: 3%;
+    background-color: rgb(236, 236, 236);
+    align-items: center;
+    padding-top: 20px;
+}
+.label_icon{
+    max-height: 30px;
+    margin: 10px;
+}
+
+.editForm{
+    background-color: rgb(223, 223, 223);
+    border: 2px solid rgb(100, 100, 100);
+    box-shadow: 3px 3px 10px #444;
+    margin: 2% 5%;
+    padding:0 2%;
+}
+
+.heroLabel{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+}
+
+form{
+    display: block;
+
+}
+
+label{
+    color: rgb(42, 42, 42);
+    font-weight: bold ;
+    margin-left:0px;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+input[type=text] {
+    width:30%;
+    margin-bottom:20px;
+    margin-top:5px;
+    display:block;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid var(--cscBlue)
+}

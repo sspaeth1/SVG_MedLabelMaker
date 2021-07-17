@@ -55,7 +55,7 @@ main{
 }
 div.label_Grid div.label_card  a > img {
     position:relative;
-    width: 80%;
+    width: 410px;
 }
 div.label_Grid div.label_card a> img:hover {
     opacity:.5;

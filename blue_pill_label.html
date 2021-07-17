@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/lables.css">
+    <link rel="stylesheet" href="css/labels.css">
     <title>Med Label Maker: Large Blue</title>
 </head>
 <body>
 
     
         <nav>
+           
             <img class="label_icon" src="./imgs/label_icon.svg" alt="label icon">
-            <h1>Label Maker</h1>
+          <a href="index.html">  
+               <h1>Label Maker</h1>
+        </a>
         </nav>
 
     <main>
@@ -21,29 +24,372 @@
            <h2>Input or Select your desired values</h2>
         <form action="">
             <label for="drugName">Drug Name</label>
-            <input type="text" name="drugName">
+            <input type="text" name="drugName" id="getDrugNameInput" placeholder="Basiliximab" onBlur="changeDrugNameText(this.value)">
             <label for="drugForm">Drug Form</label>
-            <input type="text" name="drugForm" placeholder="0" id="">
+            <input type="text" name="drugForm" placeholder="Powder for reconstitution" id="getdrugFormInput" onBlur="changeDrugFormText(this.value)">
             </form>
             <form action="">
-
             <label for="dosageNumber">Dosage Number</label>
-            <input type="text" name="dosageNumber">
+            <input type="text" name="dosageNumber" placeholder="50 mg" id="dosageNumberInput" onBlur="changeDosageNumberText(this.value)">
             <label for="unitQuantity">Unit Quantity</label>
-            <input type="text" name="unitQuantity">
+            <input type="text" name="unitQuantity" placeholder="100 tablets" onBlur="changeUnitQuantityText(this.value)">
         </form>         
         </div>
 
         <div>
-                <img src="./imgs/blueLarge.svg"  class="heroLabel"alt="injection label">
-        </div>
+            <svg version="1.1" id="TabletLabel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 701 370" style="enable-background:new 0 0 701 370;" xml:space="preserve">
+       <style type="text/css">
+        @font-face {
+            font-family: 'Arial';
+            src: url(./fonts/arial.ttf);
+        }
+        
+        @font-face {
+            font-family: 'ArialNarrow';
+            src: url(./fonts/ARIALN.TTF);
+        }    
+        @font-face {
+            font-family: 'ArialNarrow-Bold';
+            src: url(./fonts/ARIALNB.TTF)
+        }
+        @font-face {
+            font-family: 'Arial-BoldMT';
+            src: url(./fonts/arialbd.ttf);
+        }
+           .st0{fill:none;}
+           .st1{fill:#B3B3B3;}
+           .st2{font-family:'ArialNarrow-Bold';}
+           .st3{font-size:14.5px;}
+           .st4{font-family:'ArialNarrow';}
+           .st5{font-family:'Arial';}
+           .st6{fill:#999999;}
+           .st7{fill:#666666;}
+           .st8{font-family:'Arial';}
+           .st9{font-size:11px;}
+           .st10{letter-spacing:1;}
+           .st11{enable-background:new    ;}
+           .st12{font-size:12.2375px;}
+           .st13{font-family:'Arial-BoldMT';}
+           .st14{font-size:17.1042px;}
+           .st15{fill:#CCCCCC;}
+           .st16{font-size:10.732px;}
+           .st17{font-size:25.1308px;}
+           .st18{fill:#0093D0;}
+           .st19{fill:none;stroke:#0093D0;stroke-width:4;stroke-miterlimit:10;}
+           .st20{fill:none;stroke:#0093D0;stroke-width:9;stroke-miterlimit:10;}
+           .st21{fill:none;stroke:#0093D0;stroke-width:25;stroke-miterlimit:10;}
+           .st22{fill:#D6D6D6;}
+           .st23{fill:#B7B7B7;}
+           .st24{font-size:16px;}
+           .st25{font-size:31px;}
+           .st26{fill:#FFFFFF;}
+           .st27{font-size:35.0678px;}
+           .st28{fill:none;stroke:#B7B7B7;stroke-width:2;stroke-miterlimit:10;}
+           .st29{font-size:29px;}
+           .st30{font-size:50px;}
+           .st31{fill:#0093D0;stroke:none;}
+       </style>
+
+       <g id="static">
+            <rect x="1" y="1" class="st28" width="699" height="368"/>
+           <rect x="33.1" y="32.6" class="st0" width="150.9" height="63.4"/>
+           <text id="dosage" transform="matrix(1 0 0 1 33.1401 43.0132)"><tspan x="0" y="0" class="st1 st2 st3">USUAL DOSAGE: </tspan><tspan x="103" y="0" class="st1 st4 st3">See </tspan><tspan x="0" y="17.4" class="st1 st4 st3">accompaying prescribing </tspan><tspan x="0" y="34.8" class="st1 st4 st3">information.</tspan></text>
+           <rect x="33.1" y="97.6" class="st0" width="156.9" height="203.4"/>
+           <text transform="matrix(1 0 0 1 33.1401 108.0132)" class="st1 st2 st3">WARNING:</text>
+           <text transform="matrix(1 0 0 1 95.2051 108.0132)" class="st1 st4 st3"> As with all </text>
+           <text transform="matrix(1 0 0 1 33.1401 125.4131)" class="st1 st4 st3">medications, keep out of the </text>
+           <text transform="matrix(1 0 0 1 33.1401 142.813)" class="st1 st4 st3">reach of children. Store at </text>
+           <text transform="matrix(1 0 0 1 33.1401 160.2134)" class="st1 st4 st3">20</text>
+           <text transform="matrix(1.0124 0 0 1 46.3657 158.2134)" class="st1 st5 st3">º</text>
+           <text transform="matrix(1 0 0 1 51.5767 160.2134)" class="st1 st4 st3"> to 25C</text>
+           <text transform="matrix(1.0124 0 0 1 89.915 158.2134)" class="st1 st5 st3">º</text>
+           <text transform="matrix(1 0 0 1 95.126 160.2134)" class="st1 st4 st3"> (68</text>
+           <text transform="matrix(1.0124 0 0 1 115.6162 158.2134)" class="st1 st5 st3">º</text>
+           <text transform="matrix(1 0 0 1 120.8271 160.2134)" class="st1 st4 st3"> to 77</text>
+           <text transform="matrix(1.0124 0 0 1 150.585 158.2134)" class="st1 st5 st3">º</text>
+           <text transform="matrix(1 0 0 1 155.7959 160.2134)" class="st1 st4 st3">F); </text>
+           <text transform="matrix(1 0 0 1 33.1401 177.6133)" class="st1 st4 st3">[see USP Controlled Room </text>
+           <text transform="matrix(1 0 0 1 33.1401 195.0132)" class="st1 st4 st3">Temperature].</text>
+           <text transform="matrix(1 0 0 1 33.1401 212.4131)" class="st1 st4 st3">Protect from moisture, </text>
+           <text transform="matrix(1 0 0 1 33.1401 229.8135)" class="st1 st4 st3">freezing, and excessive heat.</text>
+           <text transform="matrix(1 0 0 1 33.1401 247.2129)" class="st1 st4 st3">Dispense in a tight container.</text>
+           <rect x="33.1" y="298.6" class="st0" width="150.9" height="57.4"/>
+           <text id="manufacturedBy" transform="matrix(1 0 0 1 33.1401 309.0137)"><tspan x="0" y="0" class="st1 st4 st3">Simulated Manufacture by</tspan><tspan x="0" y="17.4" class="st1 st4 st3">Colby-Sawyer Pharma, Inc.</tspan><tspan x="0" y="34.8" class="st1 st4 st3">New London, NH  03753</tspan></text>
+           
+           <g id="barcoad_1_">
+               <g transform="translate(0)">
+                   <rect x="565" y="0.7" class="st6" width="1.4" height="109.3"/>
+               </g>
+               <g transform="translate(4)">
+                   <rect x="563.8" y="0.7" class="st6" width="1.4" height="109.3"/>
+               </g>
+               <g transform="translate(8)">
+                   <rect x="562.5" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(12)">
+                   <rect x="561.3" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(14)">
+                   <rect x="560.7" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(16)">
+                   <rect x="560.1" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(18)">
+                   <rect x="559.5" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(22)">
+                   <rect x="558.3" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(24)">
+                   <rect x="557.7" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(32)">
+                   <rect x="555.2" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(38)">
+                   <rect x="553.4" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(44)">
+                   <rect x="551.6" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(46)">
+                   <rect x="550.9" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(50)">
+                   <rect x="549.7" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(52)">
+                   <rect x="549.1" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(56)">
+                   <rect x="547.9" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(58)">
+                   <rect x="547.3" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(60)">
+                   <rect x="546.7" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(66)">
+                   <rect x="544.8" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(68)">
+                   <rect x="544.2" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(74)">
+                   <rect x="542.4" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(82)">
+                   <rect x="540" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(84)">
+                   <rect x="539.3" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(88)">
+                   <rect x="538.1" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(92)">
+                   <rect x="536.9" y="0.7" class="st6" width="1.4" height="109.3"/>
+               </g>
+               <g transform="translate(96)">
+                   <rect x="535.7" y="0.7" class="st6" width="1.4" height="109.3"/>
+               </g>
+               <g transform="translate(100)">
+                   <rect x="534.5" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(102)">
+                   <rect x="533.9" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(108)">
+                   <rect x="532" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(110)">
+                   <rect x="531.4" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(114)">
+                   <rect x="530.2" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(116)">
+                   <rect x="529.6" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(122)">
+                   <rect x="527.7" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(124)">
+                   <rect x="527.1" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(128)">
+                   <rect x="525.9" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(130)">
+                   <rect x="525.3" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(132)">
+                   <rect x="524.7" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(136)">
+                   <rect x="523.5" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(142)">
+                   <rect x="521.6" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(152)">
+                   <rect x="518.6" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(100)">
+                   <rect x="490.4" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(102)">
+                   <rect x="492.6" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(108)">
+                   <rect x="499.1" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(110)">
+                   <rect x="501.2" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(114)">
+                   <rect x="505.6" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(116)">
+                   <rect x="507.8" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(122)">
+                   <rect x="514.3" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(124)">
+                   <rect x="516.4" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(128)">
+                   <rect x="520.8" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(130)">
+                   <rect x="523" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(132)">
+                   <rect x="525.1" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(136)">
+                   <rect x="529.5" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(142)">
+                   <rect x="536" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(152)">
+                   <rect x="427.8" y="304" class="st6" width="4.2" height="65.1"/>
+               </g>
+               <g transform="translate(156)">
+                   <rect x="517.4" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(166)">
+                   <rect x="514.3" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(170)">
+                   <rect x="513.1" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(178)">
+                   <rect x="510.7" y="0.7" class="st6" width="1.4" height="103"/>
+               </g>
+               <g transform="translate(184)">
+                   <rect x="508.8" y="0.7" class="st6" width="1.4" height="109.3"/>
+               </g>
+               <g transform="translate(188)">
+                   <rect x="507.6" y="0.7" class="st6" width="1.4" height="109.3"/>
+               </g>
+               <g>
+                   <text transform="matrix(1 0 0 1 554.71 113.1689)" class="st7 st8 st9 st10">6</text>
+               </g>
+               <g>
+                   <text transform="matrix(1 0 0 1 579.5811 113.1689)" class="st6 st8 st9 st10">52810</text>
+               </g>
+               <g>
+                   <text transform="matrix(1 0 0 1 641.2744 113.1689)" class="st6 st8 st9 st10">11933</text>
+               </g>
+           </g>
+           <g id="additionalPackagingsNums_1_">
+               <g>
+                   <text transform="matrix(0.9886 0 0 1 217.3535 35.6157)" class="st11"><tspan x="0" y="0" class="st1 st8 st12">ABC 1234-</tspan><tspan x="59.9" y="0" class="st1 st13 st14">567</tspan><tspan x="88.4" y="0" class="st1 st8 st12">-01</tspan></text>
+                   <g>
+                       <text transform="matrix(6.123234e-17 -1 1 6.123234e-17 527.377 301.9463)" class="st15 st8 st16 st10">100012 3 4456</text>
+                   </g>
+                   <g>
+                       <text transform="matrix(6.123234e-17 -1 1 6.123234e-17 527.377 148.9463)" class="st15 st4 st16">ABC012</text>
+                   </g>
+               </g>
+           </g>
+           <g id="rx_x5F_only_1_">
+               <g>
+                   <text transform="matrix(0.8986 0 0 1 217.3696 266.0767)" class="st1 st2 st17">Rx Only</text>
+               </g>
+           </g>
+           <g id="color_x5F_areas">
+               <!-- <path class="st18" d="M324.9,237h-99.3c-6.9,0-12.6-5.7-12.6-12.6v-33.3c0-6.9,5.7-12.6,12.6-12.6h99.3c6.9,0,12.6,5.7,12.6,12.6
+                   v33.3C337.5,231.3,331.8,237,324.9,237z"/> -->
+               <line class="st19" x1="216" y1="45" x2="505" y2="45"/>
+               <line class="st20" x1="504.5" y1="161.5" x2="211.5" y2="161.5"/>
+               <line class="st21" x1="350" y1="336.5" x2="214.5" y2="336.5"/>
+               <line class="st21" x1="506" y1="336.5" x2="462" y2="336.5"/>
+           </g>
+           <g>
+           <rect id="varnishRect" x="531" y="115" class="st22" width="170" height="189"/>
+           <text transform="matrix(1.0124 0 0 1 551.6152 207.5107)">
+               <tspan x="0" y="0" class="st23 st2 st24">VARNISH FREE AREA</tspan><tspan x="37.5" y="22" class="st23 st2 st24">23 x20mm</tspan>
+            </text>
+       </g>
+       <g  id="unitQuantity">
+       <text transform="matrix(0.8501 0 0 1 214.0703 318.1758)" class="st8 st25">100 tablets</text>
+       </g>
+       <g id="dosageNumber">
+        <rect  class="st31" transform="matrix(1 0 0 1 220 180)" x="0" y="0" rx="5" ry="5" width="120" height="60" />
+           <rect x="1" y="1" class="st28" width="699" height="368"/>
+           <text transform="matrix(1 0 0 1 227.8604 219.7949)" class="st26 st13 st27">50 mg</text>
+
+       </g>
+       <g id="drugForm">
+           <text transform="matrix(0.9109 0 0 1 214.0703 146.3501)" class="st8 st29">Drug Form</text>
+       </g>
+       <g id="drugName">
+           <text transform="matrix(0.7291 0 0 1 214.0703 101.833)" class="st2 st30">Drug Name</text>
+       </g>
+       <g id="csc_x5F_logo">
+           
+               <image style="overflow:visible;" width="224" height="350" id="CSC_x5F_logo_1_" xlink:href=".\imgs\csc_logo.jpg"  transform="matrix(0.1629 0 0 0.1629 538 308)">
+           </image>
+       </g>
+       </svg>
+            </div>
 
  
 
         </div>
     </main>
 
+<script>
+    changeDrugNameText = (el)=>{
+        // document.getElementById("getDrugNameInput").addEventListener('onBlur', ()=>{
+            // let inputText = document.getElementById("getDrugNameInput").value;
+        console.log(el);
+        document.getElementById('drugName').children[0].innerHTML = el;
 
+       //})
+    }
+    changeDrugFormText = (el)=>{
+        document.getElementById('drugForm').children[0].innerHTML = el;
+    }
+    changeDosageNumberText = (el)=>{
+        let grabDosageNumber = document.getElementById('dosageNumber').children[2].innerHTML;
+            // grabDosageNumberWidth = document.getElementById('dosageNumber').children[2].getBBox().width,
+            // getDosageNumberRectBG = document.getElementById('dosageNumber').children[0].width.baseVal.value;
+            document.getElementById('dosageNumber').children[2].innerHTML = el;
+        console.log(grabDosageNumber);
+        document.getElementById('dosageNumber').children[0].width.baseVal.value = document.getElementById('dosageNumber').children[2].getBBox().width + 20;
+    }
+    changeUnitQuantityText = (el)=>{
+        document.getElementById('unitQuantity').children[0].innerHTML = el;
+    }
+</script>
 
 </body>
 </html>
